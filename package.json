@@ -1,6 +1,6 @@
 {
   "name": "lens-extension-network-policy-viewer",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Artur Babyuk (https://github.com/artturik)",
   "description": "Lens extension to view network policy",
   "repository": {
@@ -22,6 +22,8 @@
     "lens": "^5.0.0-beta.7"
   },
   "devDependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
     "@k8slens/extensions": "^5.0.2",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
@@ -31,7 +33,7 @@
     "css-loader": "^6.7.1",
     "husky": "^7.0.1",
     "lint-staged": "^11.0.0",
-    "network-policy-viewer": "^1.0.4",
+    "network-policy-viewer": "^1.0.5",
     "prettier": "2.3.2",
     "rimraf": "^3.0.2",
     "semantic-release": "^19.0.2",
