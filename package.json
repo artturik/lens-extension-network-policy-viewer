@@ -1,0 +1,84 @@
+{
+  "name": "lens-extension-network-policy-viewer",
+  "version": "0.0.1",
+  "author": "Artur Babyuk (https://github.com/artturik)",
+  "description": "Lens extension to view network policy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artturik/lens-extension-network-policy-viewer.git"
+  },
+  "main": "dist/main.js",
+  "renderer": "dist/renderer.js",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "npm run clean && webpack",
+    "clean": "rimraf ./dist",
+    "semantic-release": "semantic-release"
+  },
+  "files": [
+    "dist/"
+  ],
+  "engines": {
+    "lens": "^5.0.0-beta.7"
+  },
+  "devDependencies": {
+    "@k8slens/extensions": "^5.0.2",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@types/js-yaml": "^4.0.5",
+    "@types/node": "^16.3.1",
+    "@types/react": "^17.0.14",
+    "css-loader": "^6.7.1",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.0",
+    "network-policy-viewer": "^1.0.4",
+    "prettier": "2.3.2",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/artturik/lens-extension-network-policy-viewer",
+  "bugs": {
+    "url": "https://github.com/artturik/lens-extension-network-policy-viewer/issues"
+  },
+  "keywords": [
+    "extension",
+    "k8slens",
+    "lens",
+    "network-policy"
+  ],
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            {
+              "path": "*.tgz",
+              "name": "lens-extension-network-policy-viewer.tgz"
+            }
+          ]
+        }
+      ],
+      "@semantic-release/git"
+    ]
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
