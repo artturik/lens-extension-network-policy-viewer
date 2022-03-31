@@ -2,7 +2,9 @@
 
 View your Kubernetes NetworkPolicy manifests as graph in Lens IDE
 
-![NetworkPolicy view in Lend IDE](docs/screenshot.png)
+![NetworkPolicy view in Lens IDE](docs/screenshot.png)
+
+[Demo: NetworkPolicyViewer as standalone app](https://artturik.github.io/network-policy-viewer/)
 
 ## Installation
 
