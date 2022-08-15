@@ -19,7 +19,7 @@
     "dist/"
   ],
   "engines": {
-    "lens": "^5.0.0-beta.7"
+    "lens": "^6.0.0"
   },
   "devDependencies": {
     "@emotion/react": "^11.8.2",
