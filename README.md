@@ -12,20 +12,24 @@ View your Kubernetes NetworkPolicy manifests as graph in Lens IDE
 
 [lens://app/extensions/install/lens-extension-network-policy-viewer](lens://app/extensions/install/lens-extension-network-policy-viewer)
 
-### Manual installation
+### Manual installation (Lens 6.x+)
 
 Menu > Extensions and search for `lens-extension-network-policy-viewer`.
 
-### Alternatives downloads
+### For Lens 5.x
+
+Use [1.0.0](https://github.com/artturik/lens-extension-network-policy-viewer/archive/refs/tags/1.0.0.tar.gz) version
+
+### Alternative downloads
 
 #### Github
-https://github.com/artturik/lens-extension-network-policy-viewer/releases/latest/download/lens-certificate-info.tgz
+https://github.com/artturik/lens-extension-network-policy-viewer/archive/refs/heads/main.tar.gz
 
 #### NPM
 
 https://registry.npmjs.org/lens-extension-network-policy-viewer/-/lens-extension-network-policy-viewer-$VERSION.tgz
 
-Replace `$VERSION` with a real version like `0.0.1`.
+Replace `$VERSION` with a real version like `2.0.0`.
 
 ## Credits
 

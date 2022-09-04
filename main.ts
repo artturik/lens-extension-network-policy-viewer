@@ -1,4 +1,3 @@
 import { Main } from "@k8slens/extensions";
 
-
-export default class CertificateInfoMainExtension extends Main.LensExtension {}
+export default class NetworkPolicyViewerExtension extends Main.LensExtension {}
